@@ -1,0 +1,18 @@
+{
+  "name": "web-scraper",
+  "version": "1.0.0",
+  "description": "a simple web scraper which will take the URL and scrape the useful data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pranav-agarwal",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15"
+  }
+}
