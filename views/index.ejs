@@ -1,5 +1,12 @@
 <%-include("header")-%>
 
-<h1>Web Scraper</h1>
+<!-- Form to input URL from the user -->
+<form action="/" method="post">
+    <label for="url">Enter the URL to be scraped :</label>
+    <input type="text" name="url" id="url">
+    <p id="msg"><%= msg %></p>
+    <button type="submit">Submit</button>
+</form>
+
 
 <%-include("footer")-%>

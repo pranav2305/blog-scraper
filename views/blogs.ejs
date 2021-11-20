@@ -1,0 +1,23 @@
+<%-include("header")-%>
+<div class="row main-container">
+<% data.forEach((blog)=>{ %>
+    <div class="col-sm-12 col-md-4 blog-card">
+        <div class="blog-container">
+            <div class="blog-title">
+                <h3><a href="<%= blog.url %>"><%= blog.title %></a></h3>
+            </div>
+            
+            <div class="image-container center">
+                <img src="<%= blog.image %>" alt="blog-image" class="blog-img">
+                <div class="rank-container center">
+                    <p class="rank"><span class="blog-rank"><%= blog.rank %></span> <span class="blog-rank-change"></span><%= blog.rankChange %> </p>
+                    <p class="metions"><%= blog.mentions %></p>
+                </div>
+            </div>
+            <p><%= blog.desc %></p>
+        </div>
+    </div>
+<% }) %>
+</div>
+
+<%-include("footer")-%>
