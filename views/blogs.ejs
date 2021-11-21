@@ -1,20 +1,43 @@
 <%-include("header")-%>
+
+<title>Blog Scraper | <%= scraped.title.split(" ")[3] %> Blogs</title>
+</head>
+<body>
+
+<div class="header-container">
+    <h1><%= scraped.title %></h1>
+</div>
+
 <div class="row main-container">
-<% data.forEach((blog)=>{ %>
+<% scraped.data.forEach((blog)=>{ %>
     <div class="col-sm-12 col-md-4 blog-card">
         <div class="blog-container">
-            <div class="blog-title">
-                <h3><a href="<%= blog.url %>"><%= blog.title %></a></h3>
+            <div class="title-container">
+                <h3><a href="<%= blog.url %>" class="blog-title"><%= blog.title %></a></h3>
             </div>
             
-            <div class="image-container center">
-                <img src="<%= blog.image %>" alt="blog-image" class="blog-img">
-                <div class="rank-container center">
-                    <p class="rank"><span class="blog-rank"><%= blog.rank %></span> <span class="blog-rank-change"></span><%= blog.rankChange %> </p>
-                    <p class="metions"><%= blog.mentions %></p>
+            <div class="details-container row">
+                <div class="col-sm-12 col-md-8 image-col">
+                    <div class="image-container">
+                        <img src="<%= blog.image %>" alt="blog-image" class="blog-img">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 rating-col">
+                    <div class="row rank-container">
+                        <div class="col-xs-6 col-sm-6 col-md-12 rating-rank">
+                            <p class="rating"><span class="blog-rank"><%= blog.rank %></span> <span class="blog-rank-change"><%= blog.rankChange %></span></p>
+                            <p class="ranking-text">Rank</p>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-12 rating-mentions">
+                            <p class="rating blog-mentions"><%= blog.mentions %></p>
+                            <p class="mentions-text">Mentions</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <p><%= blog.desc %></p>
+            <div class="desc-container">
+                <p class="blog-desc"><%= blog.desc %></p>
+            </div>
         </div>
     </div>
 <% }) %>

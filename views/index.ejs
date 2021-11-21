@@ -1,12 +1,22 @@
 <%-include("header")-%>
 
+<title>Blog Scraper</title>
+</head>
+<body>
+
+<div class="header-container">
+    <h1>Blog Scraper</h1>
+</div>
+
 <!-- Form to input URL from the user -->
-<form action="/" method="post">
-    <label for="url">Enter the URL to be scraped :</label>
-    <input type="text" name="url" id="url">
-    <p id="msg"><%= msg %></p>
-    <button type="submit">Submit</button>
-</form>
+<div class="form-container container-fluid">
+    <form action="/" method="post">
+        <label for="url" class="url-label">Enter the URL to be scraped</label>
+        <input type="text" name="url" id="url">
+        <p id="msg"><%= msg %></p>
+        <button type="submit" class="url-submit">Scrape</button>
+    </form>
+</div>
 
 
 <%-include("footer")-%>

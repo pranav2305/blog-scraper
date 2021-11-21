@@ -21,9 +21,9 @@ app.route("/")
     scraped = await scraper(url)
     if (scraped){
       if(scraped.success){
-        return res.render("blogs", {data: scraped.data})
+        return res.render("blogs", {scraped: scraped})
       } else{
-        return res.render("index", {msg : "Data cannot be scraped for the given url at this moment."})
+        return res.render("index", {msg : "Data cannot be scraped for the given URL at this moment."})
       }
     } else{
       return res.render("index", {msg: "Please enter a valid URL"})

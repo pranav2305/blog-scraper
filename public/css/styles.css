@@ -1,0 +1,191 @@
+.blog-container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 100%;
+  background-color: #30475e;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.blog-card {
+  padding-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 1%;
+  background-color: #222831;
+  margin-top: 10rem;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  padding: 2rem;
+  padding-bottom: 0;
+}
+
+.image-col {
+  padding-right: 0;
+}
+
+.rating-col {
+  padding-right: 0;
+}
+
+.blog-img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.rank-container {
+  height: 100%;
+  margin: 2rem;
+}
+
+.header-container {
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  background-color: #f05454;
+  color: #dddddd;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.desc-container {
+  padding: 2rem;
+}
+
+.rating-rank {
+  border-bottom: 0.1rem solid #222831;
+  padding: 1rem;
+  height: 50%;
+  text-align: center;
+}
+
+.rating-mentions {
+  padding: 1rem;
+  height: 50%;
+  text-align: center;
+}
+
+.rating {
+  display: inline-block;
+  padding-bottom: 2rem;
+}
+
+.blog-rank,
+.blog-mentions {
+  font-size: 3rem;
+  font-family: "Abril Fatface", cursive;
+  color: #f05454;
+}
+
+.blog-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 2.5rem;
+  color: #f05454;
+}
+
+.blog-desc {
+  font-family: "Hammersmith One", sans-serif;
+  color: #dddddd;
+}
+
+.mentions-text,
+.ranking-text {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 1.5rem;
+  color: #dddddd;
+}
+
+.blog-rank-change {
+  position: relative;
+  bottom: 1rem;
+  color: #dddddd;
+}
+
+.title-container {
+  text-align: center;
+}
+
+.blog-title:hover {
+  text-decoration: none;
+  color: #dddddd;
+}
+
+.url-label {
+  font-family: "Hammersmith One", sans-serif;
+  color: #f05454;
+  font-size: 4rem;
+  display: block;
+  padding-bottom: 4rem;
+}
+
+.form-container {
+  padding-top: 8rem;
+  display: flex;
+  justify-content: center;
+}
+
+#url {
+  width: 90%;
+  height: 4rem;
+  display: block;
+  margin: auto;
+  background-color: #30475e;
+  border-color: transparent;
+  border-radius: 1rem;
+  color: #dddddd;
+  font-size: 2rem;
+}
+
+#url:focus {
+  outline-style: none;
+  box-shadow: none;
+  border: 0.2rem solid #f05454;
+}
+
+.url-submit {
+  display: block;
+  margin: auto;
+  margin-top: 4rem;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border: 0.2rem solid #f05454;
+  border-radius: 1rem;
+  background-color: #30475e;
+  color: #dddddd;
+}
+
+.url-submit:hover {
+  background-color: #f05454;
+}
+
+#msg {
+  text-align: center;
+  color: #f05454;
+  font-size: 2rem;
+  font-family: "Hammersmith One", sans-serif;
+}
+
+@media only screen and (max-width: 960px) {
+  .rating-rank {
+    border-right: 0.1rem solid #222831;
+    border-bottom: none;
+    height: auto;
+  }
+}
