@@ -1,8 +1,6 @@
 # Task ID: Web Scraper
 
-## About
-
-A simple web scraper made to scrape blogs. This website take an URL as an input and displays the extracted data from that URL. An express server was made using [Node.js](https://nodejs.org/dist/latest-v16.x/docs/api/). A node package called [Axios](https://axios-http.com/docs/api_intro) was used to request data from a URL and [Cheerio](https://cheerio.js.org/) was used to scrape that data. [EJS](https://ejs.co/#docs) was used to create templates to render the website with dynamic data. [Bootsrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/) was used to make the website responsive by using their [Grid system](https://getbootstrap.com/docs/4.1/layout/grid/).
+## Website Link : https://blog-scraper.herokuapp.com/
 
 <br>
 
@@ -16,26 +14,87 @@ A simple web scraper made to scrape blogs. This website take an URL as an input 
 3. Clone the repository <br>
 `git clone https://github.com/pranav2305/blog-scraper.git`
 
-4. Install the node packages <br>
+4. Navigate to the project directory<br>
+`cd blog-scraper`
+
+5. Install the node packages <br>
 `npm i`
 
-5. Run the server <br>
+6. Run the server <br>
 `node index.js`
 
-6. Open the [website](http://localhost:3000/) on your browser <br>
+7. Open the [website](http://localhost:3000/) on your browser <br>
 `http://localhost:3000/`
 
 <br>
 
 ## How to Use
 
-1. Open the [website](http://localhost:3000/) in your browser.
+1. Open the [website](https://blog-scraper.herokuapp.com/) or use the [localhost](http://localhost:3000/) if you cloned the repo.
 
 2. Select any one URL from the [list of compatible URLs](#compatible-urls).
 
 3. Click on the **Scrape** button to scrape data from that URL.
 
 4. The scraped blogs will be displayed.
+
+<br>
+
+## Tech Used
+
+- An express server was made using **[Node.js](https://nodejs.org/dist/latest-v16.x/docs/api/)**.
+- A node package called **[Axios](https://axios-http.com/docs/api_intro)** was used to request data from a URL.
+- **[Cheerio](https://cheerio.js.org/)** was used to scrape the data.
+- **[EJS](https://ejs.co/#docs)** was used to create templates to render the website with dynamic data.
+- **[Bootsrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/)** was used to make the website responsive by using their **[Grid system](https://getbootstrap.com/docs/4.1/layout/grid/)**
+- **[Heroku](https://www.heroku.com)** to deploy the website.
+
+<br>
+
+## About
+
+A simple web scraper made to scrape blogs. This website take an URL as an input and displays the extracted data from that URL. Currently the scraper is limited to a few URLs only as listed [below](#compatible-urls). As of now, the scraper only scrapes blogs from [Detailed](https://detailed.com/) which updates the top 50 blogs in various categories, every 24 hours. The main aim of the scraper is to search the meaningful data from a website and ignore the unnecessary data to make it more understandable.
+
+<br>
+
+## Samples
+
+1. Home Page <br>
+![home-page](./images/1.png)
+<br>
+<br>
+
+2. Tech Blogs (Desktop view)<br>
+![tech-blogs](./images/2.png)
+<br>
+<br>
+
+3. Art Blogs (Mobile view)<br>
+![art-blogs](./images/3.png)
+
+4. For other valid URLs (incompatible URLs) <br>
+![no-data](./images/4.png)
+<br>
+<br>
+
+5. For invalid URLs <br>
+![invalid-url](./images/5.png)
+<br>
+
+
+<br>
+
+## Demo Video
+
+Link: https://youtu.be/SAH5qdraBnA
+
+<br>
+
+## References
+
+1. [Cheerio docs](https://cheerio.js.org/)
+
+2. [Bootstrap grid system](https://getbootstrap.com/docs/4.1/layout/grid/)
 
 <br>
 
